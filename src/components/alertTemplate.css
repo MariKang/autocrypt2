@@ -1,41 +1,51 @@
-.alertbox{
-    background:#FFFFFF;
-    width: 362px;
-    height: 350px;
-    position: absolute;
-    top: 295px;
-    left: 26px;
-    border-radius: 24px;
+.alertbox {
+  background: #ffffff;
+  width: 362px;
+  height: 350px;
+  position: absolute;
+  top: 150px;
+  left: 26px;
+  border-radius: 24px;
+  z-index: 107;
+}
+.alerttitle {
+  position: relative;
+  top: 72px;
+  color: #fb4c2c;
+  font-family: "roboto-bold";
+  font-size: 48px;
+  text-align: center;
 }
 
-.alerttitle{
-    position: relative;
-    top: 72px;
-    color: #FB4C2C;
-    font-family: "roboto-bold";
-    font-size: 48px;
-    text-align: center;
+.successtitle {
+  position: relative;
+  top: 72px;
+  color: #387de0;
+  font-family: "roboto-bold";
+  font-size: 48px;
+  text-align: center;
 }
 
-.alertbody{
-    position: relative;
-    top: 80px;
-    color: #232323;
-    font-family: "roboto-medium";
-    font-size: 22px;
-    text-align: center;
+.alertbody {
+  position: relative;
+  top: 80px;
+  color: #232323;
+  font-family: "roboto-medium";
+  font-size: 22px;
+  text-align: center;
 }
 
-.gotit{
-    background: #387DE0;
-    font-family: "roboto-medium";
-    font-size: 22px;
-    border-radius:24px;
-    color: #FFFFFF;
-    width: 205px;
-    height: 48px;
-    position: absolute;
-    bottom: 48px;
-    border:none;
-    left:79px;
+.gotit {
+  background: #387de0;
+  font-family: "roboto-medium";
+  font-size: 22px;
+  border-radius: 24px;
+  color: #ffffff;
+  width: 205px;
+  height: 48px;
+  position: absolute;
+  bottom: 48px;
+  border: none;
+  left: 79px;
+  cursor: pointer;
 }

@@ -1,27 +1,45 @@
-import React from 'react';
+import React from "react";
 import "./alertTemplate.css";
 
-const AlertTemplate = () => {
+const AlertTemplate = (props) => {
+  let num = parseInt(props.value / 100) * 100;
+  if (num < 10) num = 10;
 
-    let title = "Select your\ntype";
-    return(
+  console.log(props);
+
+  if (props.status !== undefined) {
+    if (props.status === "GO") {
+      return (
+        <>
+          <div>
+            <div className="alertbox">
+              <div className="successtitle">OK</div>
+
+              <div className="alertbody">Good to go</div>
+
+              <button className="gotit" onClick={props.onClick}>
+                Got it!
+              </button>
+            </div>
+          </div>
+        </>
+      );
+    }
+  }
+
+  return (
     <>
-    <div className= "alertbox">
-        <div className="alerttitle">
-            Around 400m
-        </div>
+      <div className="alertbox">
+        <div className="alerttitle">Around {num}m</div>
 
-        <div className="alertbody">
-            Watch Out!
-            Fast car is approaching!
-        </div>
+        <div className="alertbody">Watch Out! Fast car is approaching!</div>
 
-        <button className="gotit">
-            Got it!
+        <button className="gotit" onClick={props.onClick}>
+          Got it!
         </button>
-    </div>
+      </div>
     </>
-    )
-}
+  );
+};
 
 export default AlertTemplate;
