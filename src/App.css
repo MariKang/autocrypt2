@@ -4,12 +4,18 @@
 
 @font-face {
   font-family: "roboto-bold";
-  src: url("./font/Roboto-Bold.ttf");
+  src: url("./font/roboto-v27-latin-700");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "roboto-medium";
-  src: url("./font/Roboto-Medium.ttf");
+  src: url("./font/roboto-v27-latin-regular.woff2");
+
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {

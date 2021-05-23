@@ -7,7 +7,7 @@ import axios from "axios";
 import AlertTemplate from "../components/alertTemplate";
 
 const DriverMain = () => {
-  const [geo, setGeo] = useState();
+  const [geo, setGeo] = useState(["37.553744, 126.9443578"]);
   const [carId, _] = useState(1);
   const [pop, setPop] = useState(undefined);
 
@@ -15,6 +15,7 @@ const DriverMain = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       setGeo([position.coords.latitude, position.coords.longitude]);
     });
+    setGeo(["37.553744, 126.9443578"]);
   }, []);
 
   useEffect(() => {
