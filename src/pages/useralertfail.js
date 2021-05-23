@@ -5,17 +5,12 @@ import AlertTemplate from "../components/alertTemplate"
 
 const UserAlertFail = () => {
     return(
-    <>
-    
-    <div className="z1"><UserMain/></div>
-    <div className="z2">
-        <div className="dim"></div>
-    </div>
-    <div className="z3">
-        <AlertTemplate/>
-    </div>
-    
-    
+    <> 
+    <UserMain/>
+    <div className="dim"></div>
+
+    <AlertTemplate/>
+
     </>
     )
 }

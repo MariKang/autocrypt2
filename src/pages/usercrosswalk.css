@@ -40,6 +40,7 @@
     position: absolute;
     top: 434px;
     opacity: 10%;
+    z-index:-2;
 }
 
 .bar-1{
@@ -88,4 +89,12 @@
     left: 172px;
     z-index: 10px;
     background:#232323;
+}
+
+.blue-car{
+    z-index: 2;
+}
+
+.red-car{
+    z-index: 2;
 }

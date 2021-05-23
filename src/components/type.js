@@ -9,12 +9,14 @@ const Type = () => {
 
     let [pedClicked, setPedClicked] = useState('box');
     let [driveClicked, setDriveClicked] = useState('box');
-    let [activated, setActivated] = useState('ButtonB')
+    let [activated, setActivated] = useState('ButtonB');
+    let [which, setWhich] = useState("./user");
 
     function onChangePedClicked(){
         setPedClicked('box-clicked');
         setDriveClicked('box');
         setActivated('ButtonActivated');
+        setWhich("./user");
         
     }
 
@@ -22,6 +24,7 @@ const Type = () => {
         setDriveClicked('box-clicked');
         setPedClicked('box');
         setActivated('ButtonActivated');
+        setWhich("./driver");
     }
 
     return(
@@ -46,7 +49,7 @@ const Type = () => {
             </div>
         </div>
 
-        <div>{activated === 'ButtonB' ? <ButtonB/> : <ButtonActivated ped='pedClick' status='Next'/>}</div>
+        <div>{activated === 'ButtonB' ? <ButtonB/> : <ButtonActivated which={which} status='Next'/>}</div>
         </>
     )
     
