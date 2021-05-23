@@ -9,7 +9,7 @@ const DriverMain = () => {
         <div className= "dri">
           Driver
         </div>
-        <CarSvg/>
+        
         <div className="graybox">
           <div className="car"><CarSvg/></div>
         </div>

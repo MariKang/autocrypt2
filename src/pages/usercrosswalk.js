@@ -1,17 +1,29 @@
 import React from 'react';
 import "./usercrosswalk.css";
-import UserTemplate from "../components/userTemplate"
+// import UserTemplate from "../components/userTemplate"
+import ButtonActivated from "../components/buttonactivated"
 import { ReactComponent as BlueCarSvg } from '../font/car-blue.svg';
 import { ReactComponent as RedCarSvg } from '../font/car-red.svg';
 
 const UserCrossWalk = () => {
     return(
     <>
-    <UserTemplate/>
-    <div className="crosswalk">
-        <div className="bluecar"><BlueCarSvg/></div>
-        <RedCarSvg/>
+    <div className= "ped">
+      Pedestrian
     </div>
+
+    <div className="graybox2">
+        <div className="bluecar"><BlueCarSvg/></div>
+        <div className="redcar"><RedCarSvg/></div>
+        
+    </div>
+
+    <div className="crosswalk"></div>
+
+    <ButtonActivated status='Notify'/>
+
+    
+
 
     <div className="bar-1"></div>
     <div className="bar-2"></div>

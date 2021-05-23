@@ -1,3 +1,35 @@
+.ped{
+    font-family: "roboto-bold";
+    font-size:28px;
+    color: #232323;
+
+    padding-top: 96px;
+    padding-left: 26px;
+}
+
+.graybox2{
+    background: #F4F4F4;
+    position: absolute;
+    top: 162px;
+    width:414px;
+    height: 734px;
+    border-radius:24px;
+    z-index:-3;
+    display:flex;
+    padding-top:272px;
+}
+
+.crosswalk{
+    background: #232323;
+    width: 414px;
+    height: 186px;
+    position: absolute;
+    top:434px;
+    left:0px;
+    opacity: 10%;
+    z-index:-2;
+}
+
 .circle-i{
     border-radius:50%;
     background: #2C93FB;
@@ -33,15 +65,6 @@
     left: 197px;
 }
 
-.crosswalk{
-    background: #232323;
-    width: 414px;
-    height: 186px;
-    position: absolute;
-    top: 434px;
-    opacity: 10%;
-    z-index:-2;
-}
 
 .bar-1{
     width: 70px;
@@ -91,10 +114,13 @@
     background:#232323;
 }
 
-.blue-car{
+.bluecar{
     z-index: 2;
+    position:relative;
+    top:100px;
 }
 
-.red-car{
+.redcar{
     z-index: 2;
+
 }
