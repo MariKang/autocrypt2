@@ -1,0 +1,35 @@
+.circle-1{
+    border-radius:50%;
+    background: #2C93FB;
+    opacity: 36%;
+    width: 86px;
+    z-index: 1;
+    height: 86px;
+    position: absolute;
+    top: 444px;
+    left: 164px;
+}
+
+.circle-2{
+    width: 58px;
+    height: 58px;
+    background: #2C93FB;
+    opacity: 36%;
+    border-radius:50%;
+    position: absolute;
+    top: 458px;
+    left: 178px;
+    z-index: 2;
+}
+
+.circle-3{
+    background: #FB4C2C;
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    border-radius:50%;
+    position: absolute;
+    top: 477px;
+    left: 197px;
+}

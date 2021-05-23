@@ -46,7 +46,7 @@ const Type = () => {
             </div>
         </div>
 
-        <div>{activated === 'ButtonB' ? <ButtonB/> : <ButtonActivated status='Next'/>}</div>
+        <div>{activated === 'ButtonB' ? <ButtonB/> : <ButtonActivated ped='pedClick' status='Next'/>}</div>
         </>
     )
     

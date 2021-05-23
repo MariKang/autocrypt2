@@ -1,6 +1,6 @@
 import React from 'react';
 import "./select.css";
-import Type from "./components/type"
+import Type from "../components/type"
 
 
 

@@ -2,6 +2,8 @@ import React from 'react';
 import "./alertTemplate.css";
 
 const AlertTemplate = () => {
+
+    let title = "Select your\ntype";
     return(
     <>
     <div className= "alertbox">

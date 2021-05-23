@@ -1,0 +1,24 @@
+.dim{
+    width:414px;
+    height:896px;
+    background:#232323;
+    z-index:1;
+    opacity:40%;
+    position:absolute;
+    top:0px;
+}
+
+.z1{
+    position:relative;
+    z-index:4;
+}
+
+.z2{
+    position:relative;
+    z-index:5;
+}
+
+.z2{
+    position:relative;
+    z-index:6;
+}

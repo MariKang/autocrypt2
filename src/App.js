@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Select from "./select";
-import UserTemplate from "./components/userTemplate"
-{/*import Header from "./components/Header";
-import Footer from "./components/Footer";*/}
-// import Bye from "./pages/Bye";
-// import Button from "./components/atom/Button";
+import Select from "./pages/select";
+import UserMain from "./pages/usermain"
+import UserCrossWalk from "./pages/usercrosswalk"
+import AlertTemplate from "./components/alertTemplate"
+import DriverMain from "./pages/drivermain"
+import CarModel from "./components/carmodel_red"
+import UserAlertFail from "./pages/useralertfail"
+
 
 function App() {
   return (
@@ -13,7 +15,12 @@ function App() {
       {/*<Header />*/}
       <div>
         <Route exact path='/' component={ Select } />
-        <Route exact path='/user' component={ UserTemplate } />
+        <Route exact path='/user' component={ UserMain } />
+        <Route exact path='/sidewalk' component={ UserCrossWalk } />
+        <Route exact path='/alert' component={ AlertTemplate } />
+        <Route exact path='/driver' component={ DriverMain } />
+        <Route exact path='/car' component={ CarModel}/>
+        <Route exact path='/alertfail' component={ UserAlertFail }/>
       </div>
       {/*<Footer />*/}
     </Router>
@@ -22,24 +29,6 @@ function App() {
 
 export default App;
 
-
-{/*import React from 'react';
-import './App.css';
-import Select from "./select";
-import UserTemplate from "./components/userTemplate";
-import AlertTemplate from "./components/alertTemplate"
-
-function App() {
-  return (
-    <>
-    <Select></Select>
-    <UserTemplate></UserTemplate>
-    <AlertTemplate></AlertTemplate>
-    </>
-  )
-}
-
-export default App;*/}
 
 
 
