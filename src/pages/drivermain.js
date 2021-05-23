@@ -7,7 +7,7 @@ import axios from "axios";
 import AlertTemplate from "../components/alertTemplate";
 
 const DriverMain = () => {
-  const [geo, setGeo] = useState([37.553744, 126.9443578]);
+  const [geo, setGeo] = useState();
   const [carId, _] = useState(1);
   const [pop, setPop] = useState(undefined);
 
@@ -15,13 +15,11 @@ const DriverMain = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       setGeo([position.coords.latitude, position.coords.longitude]);
     });
-    setGeo([37.553744, 126.9443578]);
   }, []);
 
   useEffect(() => {
     const countdown = setInterval(async () => {
       if (geo === undefined) return;
-      console.log("sending geo info to server...");
 
       const res = axios.get(`http://3.36.109.28:8000/driver/?lat=${geo[0]}&lon=${geo[1]}&id=${carId}`);
       const data = await res.then((data) => data.data);
@@ -38,7 +36,7 @@ const DriverMain = () => {
     <>
       <div className="dri">Driver</div>
 
-      <div className="graybox3">
+      <div className="graybox">
         {pop ? <AlertTemplate value={pop} /> : <> </>}
         <div className="car">
           <CarSvg />
