@@ -37,7 +37,7 @@ const DriverMain = () => {
     <>
       <div className="dri">Driver</div>
 
-      <div className="graybox">
+      <div className="graybox3">
         {pop ? <AlertTemplate value={pop} /> : <> </>}
         <div className="car">
           <CarSvg />
